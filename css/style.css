@@ -1,6 +1,6 @@
 :root {
   /** color **/
-  --bcg-footer:rgb(40, 40, 40);
+  --bcg-footer:rgb(30, 30, 30);
   --bck-sidebar:rgb(0, 0, 0);
   --bcg--header:rgba(8, 11, 18,0.5);
   --bcg--wraapper:rgb(20, 25, 34);
@@ -8,7 +8,6 @@
   --header-height: 90px;
   --footer-height: 90px;
   --sidebar-width:300px
-  
 }
 
 /** Reset **/
@@ -31,9 +30,7 @@ a {
 ul {
   list-style: none;
 }
-li {
-  display: inline-block;
-}
+
 
 
 
@@ -67,8 +64,12 @@ li {
 
 
 /** Debug **/
-
-
+.brd{
+  border: 2px dashed red;
+}
+.brd-y{
+  border: 2px dashed yellow;
+}
 
 
 
@@ -94,14 +95,114 @@ main{
   height: calc(100vh - var(--footer-height));
   background-color: var(--bck-sidebar);
   flex-shrink: 0;
-
+  padding-left: 20px;
+  flex-direction: column;
 }
-/******************/
-/** page section **/
-/******************/
+/**Logo**/
+
+.logo{
+  height: var(--header-height);
+}
+.logo .large{
+  height: calc(var(--header-height) / 2);
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.logo .small{
+  display: none;
+}
+.playlist{
+  flex-grow: 1;
+}
+
+
+/** NAVBAR **/
+
+.navbar li > div{
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+}
+.navbar-logo,
+.navbar-logo-description{
+  height: 100%;
+  font-size: 14px;
+  margin-right: 10px;
+  
+}
+.navbar img{
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/** Playlist **/
+.playlist{
+  padding-top: 20px;
+}
+
+.playlist  *{
+  padding: 5px 0;
+}
+.crea-playlist{
+  display: flex;
+  align-items: center;
+}
+.add-new-playlist{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(163, 163, 163);
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+}
+
+
+/** Download-app **/
+
+.download-app{
+  padding-top: 20px;
+}
+.download-app .flex{
+  height: 40px;
+  justify-content: start;
+  align-items: center;
+  line-height: 30px;
+}
+.download-app .flex > *{
+  margin-right: 10px;
+}
+.download-app .flex .user{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(163, 163, 163);
+    border-radius: 50%;
+    overflow:auto; 
+}
+.download-app img{
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+.download-app .download img{
+  height: 20px;
+}
+
+/***********************/
+/**    page section   **/
+/***********************/ 
+
 .page{
   overflow: scroll;
 }
+/**************/
+/*** Header ***/
+/**************/
 
 .header{
   height: var(--header-height);
@@ -112,6 +213,9 @@ main{
   z-index: 1;
 
 }
+/***************/
+/*** Content ***/
+/***************/
 
 .content{
   
