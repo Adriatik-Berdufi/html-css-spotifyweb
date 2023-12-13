@@ -1,0 +1,25 @@
+@media all and (max-width: 768px) {
+    .container-album{
+        max-height: calc(100vw  / 2 - 190px);
+        max-width: calc(100vw  / 2 - 190px);
+    }
+    /***********************/
+    /**      FOOTER       **/
+    /***********************/
+    .footer .track{
+        max-width: 200px;
+    }
+    .footer .progress-track{
+        max-width: 250px;
+    }
+    .progress-bar{
+        min-width: 100px;
+    }
+    .footer .volume-track{
+        max-width: 150px;
+    }
+    .volume-track .progress-bar{
+        min-width: 25px;
+    }
+   
+}

@@ -120,6 +120,10 @@ main{
 }
 .logo .small{
   display: none;
+  height: calc(var(--header-height) / 2);
+  width: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .playlist{
   flex-grow: 1;
@@ -232,7 +236,7 @@ main{
 }
 .header .upgrade{
   padding: 10px 30px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
@@ -265,7 +269,7 @@ main{
   font-weight: 600;
 }
 .tittle-track{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 }
 .sub-tittle{
@@ -302,9 +306,9 @@ main{
 .recently > ul{
   flex-wrap: wrap;
 }
- .album-track{
-  height: calc(100vw  / 6 - 80px);
-  width: calc(100vw  / 6 - 80px);
+ .container-album{
+  max-height: calc(100vw  / 6 - 80px);
+  max-width: calc(100vw  / 6 - 80px);
   margin-bottom: 10px;
   margin-right: 10px;
 }
@@ -345,7 +349,6 @@ main{
 }
 .footer > div {
   min-height: var(--footer-height);
-  border: 1px solid white;
 }
 /***************/
 /***  Track  ***/

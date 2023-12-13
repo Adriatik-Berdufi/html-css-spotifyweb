@@ -1,0 +1,37 @@
+@media all and (max-width: 992px) {
+    :root {
+        --sidebar-width:250px;
+    }
+
+    /***********************/
+    /**    page section   **/
+    /***********************/
+    .container-album{
+        max-height: calc(100vw  / 4 - 90px);
+        max-width: calc(100vw  / 4 - 90px);
+    }
+    
+
+    /***********************/
+    /**      FOOTER       **/
+    /***********************/
+    .footer .track{
+        max-width: 250px;
+    }
+    
+    .footer .progress-track{
+        max-width: 300px;
+    }
+    .progress-bar{
+        min-width: 150px;
+    }
+    .footer .volume-track{
+        max-width: 200px;
+    }
+    .volume-track .progress-bar{
+        min-width: 50px;
+    }
+    .footer .volume-track > div{
+        margin-left: 5px;
+    }
+}
