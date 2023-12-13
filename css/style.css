@@ -240,8 +240,97 @@ main{
 
 
 
-/** FOOTER **/
+/***********************/
+/**      FOOTER       **/
+/***********************/ 
 .footer {
   min-height: var(--footer-height);
   background-color: var(--bcg-footer);
+  justify-content: space-between;
+}
+.footer > div {
+  min-height: var(--footer-height);
+  border: 1px solid white;
+}
+/***************/
+/***  Track  ***/
+/***************/
+.footer .track{
+  min-width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .track > div {
+  height: var(--footer-height);
+  line-height: var(--footer-height);
+  border: 2px dashed red;
+}
+.footer .track i{
+  margin: 0 5px;
+}
+.footer .track img{
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 50px;
+}
+.track-data{
+  padding-left: 20px;
+}
+.track-data > div {
+  margin-right: 5px;
+}
+
+/***************/
+/**progress-track**/
+/***************/
+.footer .progress-track{
+  min-width: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.play-icon{
+  align-items: center;
+  margin-bottom: 10px;
+}
+.progress-track i {
+  font-size: 18px;
+  margin-right: 20px;
+}
+.progress-track i.fa-circle-play{
+  font-size: 32px;
+}
+
+.progress-container{
+  align-items: center;
+}
+.progress-container > div {
+  margin: 0 10px;
+}
+.progress-bar{
+  min-width: 300px;
+  height: 3px;
+  background-color: rgb(86, 85, 85);
+}
+.progress-bar-progress{
+  width: 30%;
+  height: 3px;
+  background-color: rgb(232, 218, 218);
+}
+/***************/
+/***volume-track***/
+/***************/
+.footer .volume-track{
+  min-width: 300px;
+  justify-content: end;
+  align-items: center;
+}
+.footer .volume-track:last-child div{
+  margin-right: 10px;
+}
+.footer .volume-track > div{
+  margin-left: 10px;
+}
+.volume-track .progress-bar{
+  min-width: 100px;
 }
