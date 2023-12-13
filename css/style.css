@@ -211,8 +211,19 @@ main{
   position: sticky;
   top: 0;
   z-index: 1;
-
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
 }
+.header .upgrade{
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
 /***************/
 /*** Content ***/
 /***************/
