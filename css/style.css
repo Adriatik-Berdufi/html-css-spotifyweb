@@ -63,6 +63,9 @@ ul {
 .flex{
   display: flex;
 }
+.wrap{
+  flex-wrap: wrap;
+}
 
 
 /** Debug **/
@@ -94,6 +97,7 @@ ul {
   flex-shrink: 0;
   padding-left: 20px;
   flex-direction: column;
+  overflow: scroll;
 
 }
 .side-bar li{
@@ -229,7 +233,8 @@ nav.navbar li:hover > div::before {
 /***********************/ 
 
 .page{
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: scroll;
 }
 /**************/
 /*** Header ***/

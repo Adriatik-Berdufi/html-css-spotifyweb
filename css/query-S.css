@@ -5,14 +5,13 @@
     /***********************/
     /** side-bar section **/
     /***********************/
-
-
+    
     .side-bar{
         padding: 0 5px ;   
     }
     .container-album{
-        max-height: calc(100vw  / 2 - 60px);
-        max-width: calc(100vw  / 2 - 60px);
+        max-height: calc((100vw - 45px) / 2 - 40px );
+        max-width:calc((100vw - 45px) / 2 - 40px );
     }
     .side-bar .hidden{
         display: none;
@@ -29,6 +28,8 @@
     .play-hover i{
         font-size: 60px;
       }
+
+
 
     /***********************/
     /**      FOOTER       **/

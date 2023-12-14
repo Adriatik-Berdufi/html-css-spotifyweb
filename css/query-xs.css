@@ -1,0 +1,8 @@
+@media all and (max-width: 300px){
+
+    .container-album{
+        max-height:100vh;
+        max-width:100vh;
+    }
+
+}

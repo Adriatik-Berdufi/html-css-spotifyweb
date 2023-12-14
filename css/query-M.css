@@ -1,7 +1,7 @@
 @media all and (max-width: 768px) {
     .container-album{
-        max-height: calc(100vw  / 2 - 190px);
-        max-width: calc(100vw  / 2 - 190px);
+        max-height: calc((100vw - 250px) / 2 - 40px );
+        max-width:calc((100vw - 250px) / 2 - 40px );
     }
     .play-hover i{
         font-size: 50px;

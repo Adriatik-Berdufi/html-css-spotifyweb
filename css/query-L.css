@@ -7,10 +7,9 @@
     /**    page section   **/
     /***********************/
     .container-album{
-        max-height: calc(100vw  / 4 - 90px);
-        max-width: calc(100vw  / 4 - 90px);
+        max-height: calc((100vw - 250px) / 4 - 40px );
+        max-width:calc((100vw - 250px) / 4 - 40px );
     }
-    
 
     /***********************/
     /**      FOOTER       **/
