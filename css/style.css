@@ -78,15 +78,11 @@ ul {
 /********************************************/
                  /** MAIN **/ 
 /********************************************/
-body{
-  color: white;
-}
-main{
-  min-height: calc(100vh - var(--header-height));
-  
-}
+
 .wrapper{
+  color: white;
   background-color: var(--bcg--wraapper);
+  max-height: calc(100vh - var(--header-height));
 }
 
 /***********************/
@@ -257,7 +253,9 @@ nav.navbar li:hover > div::before {
   font-size: 12px;
   font-weight: 600;
 }
-
+.header .upgrade:hover{
+  transform: scale(1.1);
+}
 
 /*************************/
 /***      Content      ***/
