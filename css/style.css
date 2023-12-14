@@ -126,7 +126,9 @@ main{
   margin-bottom: auto;
 }
 .playlist{
+  height: 100px;
   flex-grow: 1;
+  overflow: scroll;
 }
 
 
