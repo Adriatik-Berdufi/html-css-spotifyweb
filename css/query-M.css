@@ -3,6 +3,9 @@
         max-height: calc(100vw  / 2 - 190px);
         max-width: calc(100vw  / 2 - 190px);
     }
+    .play-hover i{
+        font-size: 50px;
+      }
     /***********************/
     /**      FOOTER       **/
     /***********************/
