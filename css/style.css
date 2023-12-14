@@ -139,6 +139,20 @@ main{
   height: 30px;
   line-height: 30px;
 }
+nav.navbar li > div::before{
+  
+  display: block;
+  position: absolute;
+  translate: -5px;
+  height: 30px;
+  width: 5px;
+  border-radius: 2px;
+  background-color: rgb(79, 255, 82)
+}
+nav.navbar li:hover > div::before {
+  content: "";
+}
+
 .navbar-logo,
 .navbar-logo-description{
   height: 100%;
@@ -287,6 +301,7 @@ main{
 /***************/
 
 .content nav li{
+  position: relative;
   margin-right: 15px;
   font-size: 12px;
   opacity: 0.5;
@@ -298,6 +313,19 @@ main{
   margin-top: 20px;
   margin-bottom: 40px;
   justify-content: center;
+}
+.content nav li a::after{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  translate: 50% 50%;
+  height: 5px;
+  width: 50%;
+  border-radius: 2px;
+  background-color: rgb(79, 255, 82)
+}
+.content nav li:hover a::after{
+  content: "";
 }
 
 /***************/
